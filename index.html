@@ -18,5 +18,56 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body
+    class="h-screen w-full flex justify-center items-center bg-paleBlue bg-[url('./images/pattern-background-mobile.svg')] bg-no-repeat min-[375px]:bg-[url('./images/pattern-background-desktop.svg')] px-1.6"
+  >
+    <div class="flex flex-col max-w-sm">
+      <div>
+        <img
+          class="rounded-t-lg"
+          src="./images/illustration-hero.svg"
+          alt="illustration"
+        />
+      </div>
+      <div class="flex flex-col gap-2.4 bg-[#fff] p-2.4 rounded-b-lg">
+        <div class="flex flex-col gap-1.6">
+          <h1 class="text-darkBlue font-[900] text-2.4 text-center">
+            Order Summary
+          </h1>
+          <p class="text-desaturatedBlue text-center">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </div>
+        <div
+          class="flex bg-veryPaleBlue px-2.4 py-1.6 rounded-lg justify-between items-center"
+        >
+          <div class="flex gap-1.6">
+            <img src="./images/icon-music.svg" alt="music icon" />
+            <div>
+              <p class="font-[900]">Annual Plan</p>
+              <p class="text-desaturatedBlue">$59.99/year</p>
+            </div>
+          </div>
+          <a
+            class="text-brightBlue underline text-1.4 font-[900] hover:no-underline hover:text-brightBlue/70 transition-colors duration-300"
+            href="#"
+            >Change</a
+          >
+        </div>
+        <div class="flex flex-col gap-0.8">
+          <button
+            class="font-[700] text-1.4 bg-brightBlue rounded-lg text-paleBlue py-1.2 hover:bg-brightBlue/70 hover:text-veryPaleBlue transition-colors duration-300"
+          >
+            Proceed to Payment
+          </button>
+          <button
+            class="font-[700] text-1.4 bg-none rounded-lg text-desaturatedBlue hover:text-darkBlue transition-colors duration-300 py-1.2"
+          >
+            Cancel Order
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
